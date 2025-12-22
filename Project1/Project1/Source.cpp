@@ -1,7 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <unordered_map>
-#include <ctype.h>
+#include <cctype>
 
 int main()
 {
@@ -67,7 +67,7 @@ int main()
 
 
 	// Change this to change the position of pieces on board.
-	std::string start = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR";
+	std::string start = "r1bk3r/p2pBpNp/n4n2/1p1NP2P/6P1/3P4/P1P1K3/q5b1";
 	
 	
 	
@@ -90,22 +90,23 @@ int main()
 		int Xoff = 0, Yoff = 0;
 		for (char x : start)
 		{
-			if ((x < 'z' && x > 'a') || (x > 'A' && x < 'Z'))
+			if (std::isalpha(x))
 			{ 
 				sf::Vector2f set = { Xoff + offSetX , Yoff + offSetY};
 				pieceStorage[x]->setPosition(set);
 				Xoff += 60;
 				window.draw(*pieceStorage[x]);
 			}
-			else if (x >= 0 && x <= 8)
+			else if ((x >= '1') && (x <= '8'))
 			{
-				Xoff += (x - '0') * 60;
+				Xoff += ((x - '0') * 60);
 			}
 			else if (x == '/')
 			{
 				Yoff += 60;
 				Xoff = 0;
 			}
+
 		}
 
 		window.display();
