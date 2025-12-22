@@ -6,7 +6,7 @@ Game Development
 - It is a FEN string simulator. I am thinking of using it for my future project.
 - What does it do? If you change the FEN string named start in the simulator. 
 - It displays those changes on the board thus, it forms a very useful link between underlying logic and GUI.
-### Notes ( Project1 )
+#### Notes ( Project1 )
 - The library used is SFML.
 - The ChessPiecesArray.png might be a little different from the standard. The reason being the black pieces weren't visible on the board.
 - If you want you can change the any png files with a suitable replacement. Just make sure the sizes are the same.
