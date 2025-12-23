@@ -9,22 +9,22 @@ int main()
 	window.setPosition({ 13,13 });
 
 	sf::Image icon;
-	if (!icon.loadFromFile("E:/fluffy-octo-computing-machine/chess.png"))
+	if (!icon.loadFromFile("E:/fluffy-octo-computing-machine/Project1/chess.png"))
 		window.close(); 
 	window.setIcon(icon);
 
-	sf::Font font("E:/fluffy-octo-computing-machine/comic.ttf");
+	sf::Font font("E:/fluffy-octo-computing-machine/Project1/comic.ttf");
 	
 	sf::Angle reverse = sf::degrees(180);
 
-	sf::Texture boardload("E:/fluffy-octo-computing-machine/chessboard.jpg");
+	sf::Texture boardload("E:/fluffy-octo-computing-machine/Project1/chessboard.jpg");
 	sf::Sprite board(boardload);
 	board.setPosition({ 256,56 });
-	float offSetX = 256;
-	float offSetY = 56;
+	register float offSetX = 256;
+	register float offSetY = 56;
 
 
-	const sf::Texture pieces("E:/fluffy-octo-computing-machine/ChessPiecesArray.png");
+	const sf::Texture pieces("E:/fluffy-octo-computing-machine/Project1/ChessPiecesArray.png");
 	sf::Sprite whitePawn(pieces, { {300,60},{60,60} });
 	sf::Sprite blackPawn(pieces, { {300,0},{60,60} });
 	blackPawn.setRotation(reverse);
@@ -87,7 +87,7 @@ int main()
 		window.clear({ 230, 230, 230 });
 
 		window.draw(board);
-		int Xoff = 0, Yoff = 0;
+		register int Xoff = 0, Yoff = 0;
 		for (char x : start)
 		{
 			if (std::isalpha(x))
