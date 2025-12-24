@@ -11,7 +11,7 @@ A collection of my ideas.
 - The ChessPiecesArray.png might be a little different from the standard. The reason being the black pieces weren't visible on the board.
 - If you want you can change any png files with a suitable replacement. Just make sure the sizes are the same.
 - You can use the above FEN string simulator to turn your chess game into a GUI.
-- I have also loaded a font in there. If you want to write something on the screen the font is already loaded.
+
 
 
 
