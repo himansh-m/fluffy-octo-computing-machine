@@ -12,6 +12,11 @@ A collection of my ideas.
 - If you want you can change any png files with a suitable replacement. Just make sure the sizes are the same.
 - You can use the above FEN string simulator to turn your chess game into a GUI.
 
-
+## Project2
+- Abandoned
+- Trying to make a game where enemies spawn randomly and try to kill you.
+#### Notes ( Project2 )
+- Uses SFML.
+- Contains atleast a basic structure of the beginning of a game.
 
 
